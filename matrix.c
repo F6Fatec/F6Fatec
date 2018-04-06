@@ -25,7 +25,7 @@ void printMatrix(void) {
 void pointerMatrix(void) {
 	for (int i= 0; i< 4; i++) {
 		for (int j= 0; j< 6; j++) {
-			printf("%d\t", *(*(matrix + i) + j));
+			printf("%d\t", *(*(m + i) + j));
 		}
 		printf("\n");
 	}
