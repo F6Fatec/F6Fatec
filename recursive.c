@@ -2,16 +2,6 @@
 
 void BubbleSortRecursive (int vet[], int x)
 {
-	 /*
-	printf("\n Passo numero %d\n",x);
-
-	for (int j = 0; j < 5; j++)
-	{
-		printf("%d",vet[j] );
-	}
-	
-	printf("\n");
-	 */
 	if (x<4)
 	{
 		int aux;
@@ -30,7 +20,7 @@ void BubbleSortRecursive (int vet[], int x)
 
 int main (void)
 {
-	int vet[5] = {5,4,3,2,1} ;
+	int vet[5] = {10,35,42,2,7} ;
 	int k = 0;
 
 	for (int i = 0; i < 5; i++)
@@ -43,7 +33,7 @@ int main (void)
 
 	for (int j = 0; j < 5; j++)
 	{
-		printf("%d",vet[j] );
+		printf("%d - ",vet[j] );
 	}
 	
 	printf("\n");
