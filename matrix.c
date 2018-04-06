@@ -23,18 +23,13 @@ void printMatrix(void) {
 }
 
 void pointerMatrix(void) {
-	int *pm;
-	//int mr= rand() % 4;
-	//int mc= rand() % 6;
-	pm= &m[0][0];
 	for (int i= 0; i< 4; i++) {
 		for (int j= 0; j< 6; j++) {
-			pm= &m[i][j];
-			printf("%d\t", *pm);
+			printf("%d\t", *(*(matrix + i) + j));
 		}
 		printf("\n");
 	}
-	//printf("%d\n", *pm);
+	printf("\n");
 
 }
 
